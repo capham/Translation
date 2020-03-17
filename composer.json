@@ -1,8 +1,18 @@
 {
-  "name": "idavoll/translation-module",
+  "name": "capham/translation-module",
   "description": "Module containing all AsgardCms translations",
   "type": "asgard-module",
   "license": "MIT",
+  "authors": [
+    {
+      "name": "Ca Pham",
+      "email": "capham89@gmail.com"
+    },
+    {
+      "name": "Nicolas Widart",
+      "email": "n.widart@gmail.com"
+    }
+  ],
   "require": {
     "php": "^7.1.3",
     "composer/installers": "~1.0",
@@ -22,17 +32,6 @@
     "psr-4": {
       "Modules\\Translation\\": ".",
       "Modules\\": "Modules/"
-    }
-  },
-  "authors": [
-    {
-      "name": "Nicolas Widart",
-      "email": "n.widart@gmail.com"
-    }
-  ],
-  "extra": {
-    "branch-alias": {
-      "dev-master": "4.0.x-dev"
     }
   },
   "minimum-stability": "dev",
