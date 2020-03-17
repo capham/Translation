@@ -2,8 +2,8 @@
 
 namespace Modules\Translation\Entities;
 
-use Dimsav\Translatable\Translatable;
 use Illuminate\Database\Eloquent\Model;
+use Astrotomic\Translatable\Translatable;
 
 class Translation extends Model
 {
