@@ -2,6 +2,7 @@
 
 namespace Modules\Translation\Providers;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Modules\Core\Events\BuildingSidebar;
@@ -51,7 +52,7 @@ class TranslationServiceProvider extends ServiceProvider
         );
 
         $this->app['events']->listen(LoadingBackendTranslations::class, function (LoadingBackendTranslations $event) {
-            $event->load('translations', array_dot(trans('translation::translations')));
+            $event->load('translations', Arr::dot(trans('translation::translations')));
         });
 
         app('router')->bind('translations', function ($id) {
